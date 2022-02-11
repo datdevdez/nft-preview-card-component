@@ -1,0 +1,131 @@
+/*========== VARIABLES ==========*/
+:root {
+    --color-soft-blue: hsl(215, 51%, 70%);
+    --color-cyan: hsl(178, 100%, 50%);
+    --color-blue-background: hsl(217, 54%, 11%);
+    --color-blue-borderline: hsl(215, 32%, 27%);
+    --color-blue-nft-background: hsl(216, 50%, 16%);
+}
+
+/*========== GENERAL STYLES ==========*/
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+html {
+    box-sizing: border-box;
+    background-color: var(--color-blue-background);
+    font-family: Outfit, sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+body,
+.nft-container,
+.nft-description,
+.icons,
+.icon-info,
+.creator-container figure {
+    display: flex;
+}
+
+body,
+.nft-container,
+.nft-description {
+    flex-direction: column;
+}
+
+body {
+    min-height: 100vh;
+    /* flexbox properties */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+p {
+    font-weight: 300;
+}
+
+footer p,
+.blue-text {
+    color: var(--color-soft-blue);
+    text-align: center;
+}
+
+#eth-text {
+    color: var(--color-cyan);
+}
+
+a:link {
+    color:blue;
+}
+  
+a:visited {
+    color: blueviolet;
+}
+
+a:hover {
+    color: white;
+}
+  
+a:active {
+    color: var(--color-blue-borderline)
+}
+
+/*========== NFT STYLES ==========*/
+.nft-container,
+#eth img{
+    border-radius: 20px;
+}
+
+.nft-container {
+    max-width: 20vw;
+    min-width: 12rem;
+    height: auto;
+    background-color: var(--color-blue-nft-background);
+    border: 1px solid black;
+    box-shadow: hsla(0, 0%, 0%, .45) 0px 10px 50px;
+    padding: 1rem;
+    /* flexbox properties */
+    gap: 1rem;
+}
+
+.nft-description {
+    /* flexbox property */
+    gap: 1rem;
+}
+
+.icons {
+    /* flexbox property */
+    gap: .4rem;
+}
+
+.icons img{
+    object-fit: contain;
+}
+
+.icon-info {
+    /* flexbox property */
+    justify-content: space-between;
+}
+
+.creator-container figure{
+    border-top: 2px solid hsl(215, 32%, 27%);
+    padding-top: 1rem;
+    /* flexbox properties */
+    align-items: center;
+    gap: 1rem;
+}
+#jules-img {
+    object-fit: cover;
+    width: 10%;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+#eth img {
+    max-width: 100%;
+    height: auto;
+}

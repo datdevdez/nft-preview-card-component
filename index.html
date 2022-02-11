@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <!-- Linking Favicon, CSS Sheet and Google Fonts-->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"/>
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+</head>
+<body>
+  <!-- Flexbox container for entire NFT-->
+  <section class="nft-container">
+
+    <figure id="eth">
+      <img src="images/image-equilibrium.jpg" alt="Equilibrium NFT Image">
+    </figure>
+
+    <!-- Flexbox container for NFT text and images-->
+    <div class="nft-description">
+      <h3>Equilibrium #3429</h3>
+      <p><span class="blue-text">Our Equilibrium collection promotes balance and calm.</span></p>
+      <div class="icon-info">
+        <figure class="icons">
+          <img src="images/icon-ethereum.svg" alt="Ethereum Image">
+          <figcaption>
+            <p id="eth-text">0.041 ETH</p>
+          </figcaption>
+        </figure>
+        <figure class="icons">
+          <img src="images/icon-clock.svg" alt="Ethereum Image">
+          <figcaption>
+            <p><span class="blue-text">3 days left</span></p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- Flexbox container for Avatar section -->
+    <div class="creator-container">
+      <figure>
+        <img id="jules-img" src="images/image-avatar.png" alt="Jules Wyyvern Avatar Image">
+        <figcaption>
+          <p><span class="blue-text">Creation of</span> Jules Wyvern</p>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <footer>
+    <p>Challenge by <a href="https://www.frontendmentor.io" target="_blank">Frontend Mentor</a>. Coded by <a href="https://linktr.ee/datdevdez" target="_blank">Dezmond Williams</a>.</p>
+  </footer>
+</body>
+</html>
